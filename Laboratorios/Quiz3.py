@@ -1,4 +1,5 @@
 #Inicio 
+#Modifique el codico el error estaba en que tenia 2 impresiones que imprimian la misma vairable  por eso imprimia  los 2 resultados del mismo flujo
 
 Minutos = 60 
 Minr = 0
@@ -14,9 +15,17 @@ while co < 5:
 		Ser = segundos % Minutos
 		SF = Minutos - Ser
 
+	
+
+
+
+	if segundos < Minutos or segundos == Minutos:
+		SF = Minutos - segundos
+		
+
+
+	co += 1;
 	print("Los segundos faltantes son:"+str(SF))
 
-	if segundos < Minutos:
-		SF = Minutos - segundos
-		print("Los segundos faltantes son:"+str(SF))
-	co += 1;
+
+	#Ejecute escenarios con un  numero mayor a 60  menos a 60  y  numeros negativos
